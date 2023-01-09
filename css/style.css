@@ -5,6 +5,16 @@ body {
     color: white;
 }
 
+h3 {
+    font-weight: 700;
+}
+
+.regular-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
 /* Layout */
 
 .top-content {
@@ -57,20 +67,34 @@ header {
     width: 30px;
 }
 
-.side-content-nav .side-content-icons .icons-text {
+.side-content-nav .side-content-icons .regular-text,
+.side-content .playlist .regular-text {
     margin-left: 5px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    display: inline-block;
 }
 
 /* Side Content Playlist */
 
+.side-content .create-playlist .fa-square-plus {
+    font-size: 2.5rem;
+}
 
+.playlist .create-playlist {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.playlist .playlist-list li {
+    font-size: 0.9rem;
+    margin: 20px 0;
+}
 
 /* Footer */
 
 footer {
+    position: relative;
+    z-index: 1;
     height: 100px;
     background-color: #282828;
 }
