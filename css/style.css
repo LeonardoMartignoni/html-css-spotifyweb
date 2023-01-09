@@ -369,6 +369,7 @@ footer {
 }
 
 .bottom-action-buttons .time-bar {
+    cursor: pointer;
     margin: 0 30px;
     border: 2px solid grey;
     border-radius: 50px;
@@ -383,6 +384,21 @@ footer {
     position: absolute;
     top: -2px;
     left: -2px;
+}
+
+.bottom-action-buttons .time-bar .fa-circle {
+    display: none;
+}
+
+.bottom-action-buttons .time-bar:hover .time-bar-advance {
+    border-color: greenyellow;
+}
+
+.bottom-action-buttons .time-bar:hover .fa-circle {
+    display: block;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 100%;
 }
 
 .bottom-action-buttons .time {
@@ -406,6 +422,7 @@ footer {
 }
 
 .options-buttons .volume-bar {
+    cursor: pointer;
     width: 100%;
     border: 2px solid grey;
     border-radius: 50px;
@@ -419,6 +436,21 @@ footer {
     position: absolute;
     top: -2px;
     left: -2px;
+}
+
+.options-buttons .volume-bar .fa-circle {
+    display: none;
+}
+
+.options-buttons .volume-bar:hover .volume-bar-advance {
+    border-color: greenyellow;
+}
+
+.options-buttons .volume-bar:hover .fa-circle {
+    display: block;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 100%;
 }
 
 /* Media Queries */
