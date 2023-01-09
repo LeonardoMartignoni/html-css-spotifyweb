@@ -39,7 +39,9 @@ main {
 }
 
 header {
-    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -139,6 +141,16 @@ header {
 .side-content .download-app .download-text {
     margin-left: 10px;
     font-size: 0.8rem;
+}
+
+/* Header */
+
+.upgrade-btn {
+    font-weight: 500;
+    padding: 15px 50px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 0.9rem;
 }
 
 /* Footer */
