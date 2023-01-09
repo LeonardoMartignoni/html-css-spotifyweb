@@ -67,6 +67,10 @@ header {
     width: 170px;
 }
 
+.side-content>#small-logo {
+    display: none;
+}
+
 /* Side Content Nav */
 
 .side-content-nav {
@@ -201,6 +205,7 @@ header {
 .content .genre-nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -280,8 +285,22 @@ footer {
     display: block;
 }
 
+.song-listening .song-details .song-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.song-listening .song-details .song-author {
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
 .song-listening .song-action {
-    margin-left: 30px;
+    margin-left: 10px;
+}
+
+.song-listening .song-action>i {
+    margin-left: 10px;
 }
 
 /* Action Buttons */
@@ -341,13 +360,20 @@ footer {
 /* Options Buttons */
 
 .options-buttons {
+    width: 220px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.options-buttons-content {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
 .options-buttons .volume-bar {
-    width: 100px;
+    width: 100%;
     border: 2px solid grey;
     border-radius: 50px;
     position: relative;
@@ -360,4 +386,78 @@ footer {
     position: absolute;
     top: -2px;
     left: -2px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+
+    .col {
+        flex-basis: calc((100% / 12) * 3);
+        max-width: calc((100% / 12) * 3);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .col {
+        flex-basis: calc((100% / 12) * 6);
+        max-width: calc((100% / 12) * 6);
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .side-content-nav .side-content-icons .regular-text,
+    .side-content .playlist .regular-text {
+        display: none;
+    }
+
+    .side-content .profile hr {
+        display: none;
+    }
+
+    .side-content>#logo {
+        display: none;
+    }
+
+    .side-content>#small-logo {
+        width: 30px;
+        display: inline-block;
+    }
+
+    .profile-name .profile-text {
+        display: none;
+    }
+
+    .side-content .download-app .download-text {
+        display: none;
+    }
+
+    .side-content .download-app #download-button {
+        margin-bottom: 20px;
+    }
+
+    .side-content .playlist {
+        display: none;
+    }
+
+    .side-content {
+        width: 70px
+    }
+
+    main {
+        width: calc(100% - 70px);
+    }
+
+    header {
+        width: calc(100% - 70px);
+    }
+
+    .side-content-nav .nav-selected::before {
+        display: none;
+    }
+
 }
