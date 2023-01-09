@@ -5,14 +5,25 @@ body {
     color: white;
 }
 
+h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
 h3 {
     font-weight: 700;
 }
 
 .regular-text {
-    font-size: 0.9rem;
+    color: grey;
+    font-size: 0.8rem;
     font-weight: 500;
-    display: inline-block;
+    display: block;
 }
 
 /* Layout */
@@ -46,7 +57,7 @@ header {
 }
 
 .content {
-    padding-top: 120px;
+    padding: 120px 20px 20px 20px;
 }
 
 /* Side Content */
@@ -134,6 +145,7 @@ header {
 /* Download App */
 
 .download-app {
+    color: grey;
     display: flex;
     align-items: center;
 }
@@ -169,6 +181,26 @@ header {
 .content .genre-nav li {
     color: grey;
     font-weight: 600;
+}
+
+.content section {
+    margin: 30px 0;
+}
+
+/* Cards */
+
+.song-list {
+    margin: 0 -10px;
+}
+
+.row .card {
+    padding: 0 10px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.row .card h2 {
+    margin: 10px 0 5px 0;
 }
 
 /* Footer */
