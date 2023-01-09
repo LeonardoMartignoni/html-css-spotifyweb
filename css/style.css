@@ -1,9 +1,19 @@
+/* Generals */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* Layout */
+
 .top-content {
     height: calc(100vh - 100px);
     display: flex;
 }
 
 .side-content {
+    padding: 20px;
     width: 300px;
     height: 100%;
     background-color: black;
@@ -20,6 +30,43 @@ header {
     height: 100px;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
+/* Side Content */
+
+.side-content>* {
+    display: block;
+}
+
+.side-content>#logo {
+    width: 170px;
+}
+
+/* Side Content Nav */
+
+.side-content-nav {
+    margin: 30px 0;
+}
+
+.side-content-nav .side-content-icons {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.side-content-nav .side-content-icons>img {
+    width: 30px;
+}
+
+.side-content-nav .side-content-icons .icons-text {
+    margin-left: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Side Content Playlist */
+
+
 
 /* Footer */
 
