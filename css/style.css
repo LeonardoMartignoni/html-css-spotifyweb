@@ -73,6 +73,18 @@ header {
     margin: 30px 0;
 }
 
+.side-content-nav li {
+    position: relative;
+}
+
+.side-content-nav .nav-selected::before {
+    content: "";
+    border: 2px solid greenyellow;
+    position: absolute;
+    left: -20px;
+    height: 100%;
+}
+
 .side-content-nav .side-content-icons {
     display: flex;
     align-items: center;
@@ -184,7 +196,7 @@ header {
     font-weight: 600;
 }
 
-.content .genre-nav li.selected::after {
+.content .genre-nav li.genre-selected::after {
     content: "";
     margin-top: 3px;
     position: relative;
