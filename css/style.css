@@ -53,6 +53,7 @@ main {
 
 header {
     position: fixed;
+    z-index: 1;
     width: calc(100% - 300px);
     padding: 25px;
     background-color: rgba(0, 0, 0, 0.4);
