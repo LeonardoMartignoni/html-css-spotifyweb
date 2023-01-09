@@ -20,6 +20,7 @@ h3 {
 }
 
 .regular-text {
+    cursor: pointer;
     color: grey;
     font-size: 0.8rem;
     font-weight: 500;
@@ -71,6 +72,10 @@ header {
     display: none;
 }
 
+.side-content .regular-text:hover {
+    color: white;
+}
+
 /* Side Content Nav */
 
 .side-content-nav {
@@ -111,14 +116,20 @@ header {
 /* Side Content Playlist */
 
 .side-content .create-playlist .fa-square-plus {
-    color: darkgray;
     font-size: 2.5rem;
 }
 
 .playlist .create-playlist {
+    color: grey;
+    cursor: pointer;
     margin: 15px 0;
     display: flex;
     align-items: center;
+}
+
+.playlist .create-playlist:hover .fa-square-plus,
+.playlist .create-playlist:hover .playlist-text {
+    color: white;
 }
 
 .playlist .create-playlist .playlist-text {
@@ -127,7 +138,6 @@ header {
 }
 
 .playlist .playlist-list li {
-    font-size: 0.9rem;
     margin: 20px 0;
 }
 
@@ -174,7 +184,8 @@ header {
 
 /* Download App */
 
-.download-app {
+.side-content .download-app {
+    cursor: pointer;
     color: grey;
     display: flex;
     align-items: center;
@@ -187,6 +198,10 @@ header {
 .side-content .download-app .download-text {
     margin-left: 10px;
     font-size: 0.8rem;
+}
+
+.side-content .download-app:hover .download-text {
+    color: white;
 }
 
 /* Header */
@@ -206,12 +221,16 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 25px;
 }
 
 .content .genre-nav li {
     color: grey;
     font-weight: 600;
+}
+
+.content .genre-nav li:hover {
+    color: white;
 }
 
 .content .genre-nav li.genre-selected::after {
@@ -291,8 +310,15 @@ footer {
 }
 
 .song-listening .song-details .song-author {
-    font-weight: 300;
+    color: gray;
+    font-weight: 500;
     font-size: 0.7rem;
+}
+
+.song-listening .song-details .song-author:hover {
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
 }
 
 .song-listening .song-action {
@@ -300,7 +326,13 @@ footer {
 }
 
 .song-listening .song-action>i {
+    color: gray;
     margin-left: 10px;
+}
+
+.song-listening .song-action>i:hover {
+    cursor: pointer;
+    color: white
 }
 
 /* Action Buttons */
