@@ -251,7 +251,7 @@ footer {
 /* Action Buttons */
 
 .action-buttons {
-    flex-basis: 600px;
+    width: 40%;
 }
 
 /* Top Action Buttons */
@@ -263,7 +263,7 @@ footer {
 }
 
 .top-action-buttons>i {
-    margin: 0 20px;
+    margin: 0 10px;
     font-size: 1.3rem;
 }
 
@@ -289,4 +289,18 @@ footer {
 .bottom-action-buttons .time {
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+/* Options Buttons */
+
+.options-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.options-buttons .volume-bar {
+    width: 100px;
+    border: 2px solid grey;
+    border-radius: 50px;
 }
