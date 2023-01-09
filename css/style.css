@@ -23,6 +23,8 @@ h3 {
 }
 
 .side-content {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     width: 300px;
     height: 100%;
@@ -42,10 +44,6 @@ header {
 }
 
 /* Side Content */
-
-.side-content>* {
-    display: block;
-}
 
 .side-content>#logo {
     width: 170px;
@@ -88,6 +86,32 @@ header {
 .playlist .playlist-list li {
     font-size: 0.9rem;
     margin: 20px 0;
+}
+
+/* Profile */
+
+.side-content .profile {
+    margin-top: auto;
+}
+
+.side-content .profile hr {
+    margin: 10px 0;
+}
+
+/* Download App */
+
+.download-app {
+    display: flex;
+    align-items: center;
+}
+
+.side-content .download-app>img {
+    width: 20px;
+}
+
+.side-content .download-app .download-text {
+    margin-left: 10px;
+    font-size: 0.8rem;
 }
 
 /* Footer */
