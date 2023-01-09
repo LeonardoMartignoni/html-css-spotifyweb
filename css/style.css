@@ -93,6 +93,7 @@ header {
 
 .side-content-nav .nav-selected::before {
     content: "";
+    background-color: greenyellow;
     border: 2px solid greenyellow;
     position: absolute;
     left: -20px;
@@ -153,6 +154,7 @@ header {
 }
 
 .side-content .profile hr {
+    border-color: grey;
     margin: 10px 0;
 }
 
@@ -247,6 +249,7 @@ header {
     display: block;
     width: 50%;
     border: 1px solid greenyellow;
+    background-color: greenyellow;
 }
 
 .content section {
@@ -409,6 +412,7 @@ footer {
     cursor: pointer;
     margin: 0 30px;
     border: 2px solid grey;
+    background-color: grey;
     border-radius: 50px;
     width: 100%;
     position: relative;
@@ -416,6 +420,7 @@ footer {
 
 .bottom-action-buttons .time-bar .time-bar-advance {
     width: 30%;
+    background-color: lightgray;
     border: 2px solid lightgray;
     border-radius: 50px;
     position: absolute;
@@ -428,6 +433,7 @@ footer {
 }
 
 .bottom-action-buttons .time-bar:hover .time-bar-advance {
+    background-color: greenyellow;
     border-color: greenyellow;
 }
 
@@ -465,6 +471,7 @@ footer {
 .options-buttons .volume-bar {
     cursor: pointer;
     width: 100%;
+    background-color: grey;
     border: 2px solid grey;
     border-radius: 50px;
     position: relative;
@@ -472,6 +479,7 @@ footer {
 
 .options-buttons .volume-bar .volume-bar-advance {
     width: 30%;
+    background-color: lightgray;
     border: 2px solid lightgray;
     border-radius: 50px;
     position: absolute;
@@ -484,6 +492,7 @@ footer {
 }
 
 .options-buttons .volume-bar:hover .volume-bar-advance {
+    background-color: greenyellow;
     border-color: greenyellow;
 }
 
