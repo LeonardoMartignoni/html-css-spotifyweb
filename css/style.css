@@ -214,8 +214,34 @@ header {
 /* Footer */
 
 footer {
+    display: flex;
+    align-items: center;
     position: relative;
     z-index: 1;
     height: 100px;
+    padding: 10px;
     background-color: #282828;
+}
+
+/* Song Listening */
+
+.song-listening {
+    display: flex;
+    align-items: center;
+}
+
+.song-listening .song-little-view {
+    width: 60px;
+}
+
+.song-listening .song-details {
+    margin-left: 15px;
+}
+
+.song-listening .song-details>span {
+    display: block;
+}
+
+.song-listening .song-action {
+    margin-left: 30px;
 }
