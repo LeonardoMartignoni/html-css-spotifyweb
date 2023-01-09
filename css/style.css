@@ -40,6 +40,7 @@ h3 {
     width: 300px;
     height: 100%;
     background-color: black;
+    overflow: hidden;
 }
 
 main {
@@ -215,6 +216,7 @@ header {
 
 footer {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 1;
@@ -244,4 +246,47 @@ footer {
 
 .song-listening .song-action {
     margin-left: 30px;
+}
+
+/* Action Buttons */
+
+.action-buttons {
+    flex-basis: 600px;
+}
+
+/* Top Action Buttons */
+
+.top-action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-action-buttons>i {
+    margin: 0 20px;
+    font-size: 1.3rem;
+}
+
+.top-action-buttons>.play-button {
+    font-size: 2.2rem;
+}
+
+/* Bottom Action Buttons */
+
+.bottom-action-buttons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-action-buttons .time-bar {
+    margin: 0 30px;
+    border: 2px solid grey;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.bottom-action-buttons .time {
+    font-size: 0.8rem;
+    font-weight: 600;
 }
