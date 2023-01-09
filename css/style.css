@@ -39,10 +39,14 @@ main {
 }
 
 header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 30px;
+    position: fixed;
+    width: calc(100% - 300px);
+    padding: 25px;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    padding-top: 120px;
 }
 
 /* Side Content */
@@ -146,11 +150,25 @@ header {
 /* Header */
 
 .upgrade-btn {
+    float: right;
     font-weight: 500;
     padding: 15px 50px;
     border: 1px solid white;
     border-radius: 50px;
     font-size: 0.9rem;
+}
+
+/* Main Content */
+
+.content .genre-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content .genre-nav li {
+    color: grey;
+    font-weight: 600;
 }
 
 /* Footer */
