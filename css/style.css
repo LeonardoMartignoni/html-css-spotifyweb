@@ -98,6 +98,33 @@ header {
     margin: 10px 0;
 }
 
+.side-content .profile-icon>img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.side-content .profile-name {
+    display: flex;
+    align-items: center;
+}
+
+.side-content .profile-name .profile-icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+}
+
+.profile-name .profile-text {
+    font-size: 0.9rem;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+
 /* Download App */
 
 .download-app {
