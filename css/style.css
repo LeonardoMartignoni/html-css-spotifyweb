@@ -408,9 +408,13 @@ footer {
     align-items: center;
 }
 
-.bottom-action-buttons .time-bar {
+.bottom-action-buttons .time-bar-content {
     cursor: pointer;
-    margin: 0 30px;
+    padding: 10px;
+    width: 100%;
+}
+
+.bottom-action-buttons .time-bar {
     width: 100%;
     height: 4px;
     background-color: grey;
@@ -429,12 +433,12 @@ footer {
     display: none;
 }
 
-.bottom-action-buttons .time-bar:hover .time-bar-advance {
+.bottom-action-buttons .time-bar-content:hover .time-bar-advance {
     background-color: greenyellow;
     border-color: greenyellow;
 }
 
-.bottom-action-buttons .time-bar:hover .fa-circle {
+.bottom-action-buttons .time-bar-content:hover .fa-circle {
     display: block;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -466,8 +470,13 @@ footer {
     cursor: pointer;
 }
 
-.options-buttons .volume-bar {
+.options-buttons .volume-bar-content {
     cursor: pointer;
+    width: 100%;
+    padding: 10px;
+}
+
+.options-buttons .volume-bar {
     width: 100%;
     height: 4px;
     background-color: grey;
@@ -486,12 +495,12 @@ footer {
     display: none;
 }
 
-.options-buttons .volume-bar:hover .volume-bar-advance {
+.options-buttons .volume-bar-content:hover .volume-bar-advance {
     background-color: greenyellow;
     border-color: greenyellow;
 }
 
-.options-buttons .volume-bar:hover .fa-circle {
+.options-buttons .volume-bar-content:hover .fa-circle {
     display: block;
     transform: translate(-50%, -50%);
     position: absolute;
