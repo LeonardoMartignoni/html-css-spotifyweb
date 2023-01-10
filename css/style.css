@@ -65,11 +65,11 @@ header {
 
 /* Side Content */
 
-.side-content>#logo {
+.side-content .logo-redirect>#logo {
     width: 170px;
 }
 
-.side-content>#small-logo {
+.side-content .logo-redirect>#small-logo {
     display: none;
 }
 
@@ -539,11 +539,11 @@ footer {
         display: none;
     }
 
-    .side-content>#logo {
+    .side-content .logo-redirect>#logo {
         display: none;
     }
 
-    .side-content>#small-logo {
+    .side-content .logo-redirect>#small-logo {
         width: 30px;
         display: inline-block;
     }
