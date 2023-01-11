@@ -632,4 +632,19 @@ footer {
         display: none;
     }
 
+    footer .song-action i {
+        display: block;
+        margin: 5px 0;
+    }
+
+    footer .options-buttons {
+        width: auto;
+        flex-direction: column;
+    }
+
+    footer .options-buttons .fa-volume-high,
+    footer .options-buttons .volume-bar-content {
+        display: none;
+    }
+
 }
