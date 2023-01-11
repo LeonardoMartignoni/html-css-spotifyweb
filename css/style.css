@@ -92,6 +92,10 @@ header {
     position: relative;
 }
 
+.side-content-nav .side-content-icons.nav-selected>img {
+    filter: brightness(1)
+}
+
 .side-content-nav .nav-selected .regular-text {
     transition: color 0.2s ease 0s;
     color: white;
@@ -114,12 +118,22 @@ header {
 
 .side-content-nav .side-content-icons>img {
     width: 30px;
+    transition: filter 0.2s ease 0s;
+    filter: brightness(0.5);
+}
+
+.side-content-nav .side-content-icons:hover>img {
+    filter: brightness(1);
 }
 
 .side-content-nav .side-content-icons .regular-text,
 .side-content .playlist .regular-text {
     transition: color 0.2s ease 0s;
     margin-left: 5px;
+}
+
+.side-content-nav .side-content-icons:hover .regular-text {
+    color: white;
 }
 
 /* Side Content Playlist */
@@ -204,6 +218,12 @@ header {
 
 .side-content .download-app>img {
     width: 20px;
+    transition: filter 0.2s ease 0s;
+    filter: brightness(0.5);
+}
+
+.side-content .download-app:hover>img {
+    filter: brightness(1);
 }
 
 .side-content .download-app .download-text {
