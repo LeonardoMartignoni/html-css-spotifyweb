@@ -161,6 +161,11 @@ header {
     margin-left: 15px;
 }
 
+.playlist .create-playlist .playlist-text {
+    font-size: 0.9rem;
+    margin-left: 15px;
+}
+
 .playlist .playlist-list li {
     margin: 20px 0;
 }
@@ -495,16 +500,11 @@ footer {
     width: 220px;
     display: flex;
     justify-content: flex-end;
-}
-
-.options-buttons-content {
-    width: 100%;
-    display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 15px
 }
 
-.options-buttons-content>i {
+.options-buttons>i {
     cursor: pointer;
 }
 
