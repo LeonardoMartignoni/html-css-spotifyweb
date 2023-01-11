@@ -66,7 +66,12 @@ header {
 /* Side Content */
 
 .side-content .logo-redirect>#logo {
+    transition: filter 0.5s ease 0s;
     width: 170px;
+}
+
+.side-content .logo-redirect:hover>#logo {
+    filter: brightness(0) invert(69%) sepia(22%) saturate(6185%) hue-rotate(95deg) contrast(101%);
 }
 
 .side-content .logo-redirect>#small-logo {
@@ -248,6 +253,7 @@ header {
 
 .content .genre-nav li.genre-selected::after {
     content: "";
+    opacity: 100%;
     margin-top: 3px;
     position: relative;
     left: 50%;
